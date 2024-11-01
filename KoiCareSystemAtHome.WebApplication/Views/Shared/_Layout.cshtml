@@ -1,6 +1,8 @@
 ﻿<!DOCTYPE html>
 <html lang="vi">
 <head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="~/css/style.css" />
@@ -12,14 +14,17 @@
 </head>
 <body>
     <!-- header -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
     <header>
         <h1 class="title">KOI CARE SYSTEM AT HOME</h1>
         <nav class="navHeader">
             <ul>
-                <li><a  class="home">Home</a></li>
-                <li><a  class="product">Sản phẩm</a></li>
+                <li><a class="home">Home</a></li>
+                <li><a class="product">Sản phẩm</a></li>
                 <li><a asp-action="Index" asp-controller="Login" class="login">Đăng nhập</a></li>
-                <li><a  class="contact">Liên hệ</a></li> <!-- liên hệ ở bên dưới trang chủ -->
+                <li><a class="contact">Liên hệ</a></li> <!-- liên hệ ở bên dưới trang chủ -->
             </ul>
         </nav>
     </header>
