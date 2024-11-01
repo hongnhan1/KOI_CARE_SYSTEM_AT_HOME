@@ -6,7 +6,7 @@ namespace KoiCareSystemAtHome.WebApplication.Models
     public class News
     {
         [Key]
-        public string PostID { get; set; }
+        public int PostID { get; set; }
 
         [Required]
         [StringLength(255)]
