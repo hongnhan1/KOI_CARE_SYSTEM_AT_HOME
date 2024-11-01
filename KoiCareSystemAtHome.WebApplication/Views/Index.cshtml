@@ -1,0 +1,29 @@
+@model IEnumerable<KoiCareSystemAtHome.WebApplication.Models.News>
+@{
+    ViewData["Title"] = "News List";
+}
+
+<h1>News List</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Publish Date</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model)
+{
+    <tr>
+        <td>@item.Title</td>
+        <td>@item.Author</td>
+        <td>@item.PublishDate.ToShortDateString()</td>
+    </tr>
+}
+    </tbody>
+</table>
+
+<a href="@Url.Action("Create", "News")" class="btn btn-primary">Create New News</a>
